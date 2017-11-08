@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Power Pacing for Time Trials</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<LINK REL=StyleSheet HREF="css/raceplan.css" TYPE="text/css" MEDIA=screen />
+		<link rel="stylesheet" href="css/raceplanprint.css" type="text/css" media="print" />
+		<script type='text/javascript' language="JavaScript" SRC="js/jquery.js"></script>
+		<script type='text/javascript' language="JavaScript" SRC="js/raceplan.js"></script>
+		<script type='text/javascript' language="JavaScript" SRC="js/jquery.qtip-1.0.0-rc3.min.js"></script>
+	</head>
+	<body>
+		<div id='title'><h1>Power Pacing for Time Trials<img class='helpico' id='helptitle' src='img/Info.png' alt='help'/></h1></div>
+		<div id='print'><img id='printbtn' src='img/Print.png' alt='print'/></div>
+		<div id='globals'>
+			<h2>Settings</h2>
+			<div class='globalopt'><label for="globalftp">FTP</label><input id='globalftp' class='numberEntry' type='text' /><img class='helpico' id='helpftp' src='img/Info.png' alt='help'/></div>
+			<div class='globalopt'><label for="globalif">Goal IF</label><input id='globalif' class='numberEntry' type='text' /><img class='helpico' id='helpgif' src='img/Info.png' alt='help'/></div>
+			<div class='globalopt'><label for="globalnp">Goal Normalized Power (NP)</label><input id='globalnp' class='numberEntry' type='text' readonly='readonly'  disabled='disabled' class='disabled' /><img class='helpico' id='helpgnp' src='img/Info.png' alt='help'/></div>
+            <div class='globalopt'><label for="globalvi">VI</label><input id='globalvi' class='numberEntry' type='text' /><img class='helpico' id='helpvi' src='img/Info.png' alt='help'/></div>
+			<div class='globalopt'><label for="globaldist">Distance</label><input id='globaldist' class='numberEntry' type='text' />
+			    <select>
+                    <option value="miles" selected>Miles</option>
+                    <option value="km">Km</option>
+                </select>
+				<img class='helpico' id='helpdist' src='img/Info.png' alt='help'/>
+			</div>
+			<div class='buttons'>
+				<button id='globalUpdate'>Update</button>
+			</div>
+		</div>
+		<div>
+		<h2>Event Segments<img class='helpico' id='helpsegments' src='img/Info.png' alt='help'/></h2>
+	    </div>
+		<div id='plan'>	
+		</div>
+		<div id='buttons'>
+            <button id='editAdd' onclick='onClickEdit(-1);'>Add</button>
+        </div>  
+		<div id='edit'>	
+		    <h2 id='editboxtitle'>Edit</h2>
+            <div class='editopt'><label for="editFrom">From</label><input id='editFrom' class='numberEntry' type='text' value='1.0' /><img class='helpico' id='helpfrom' src='img/Info.png' alt='help'/></div>
+            <div class='editopt'><label for="editTo">To</label><input id='editTo' class='numberEntry' type='text' value='1.0' /><img class='helpico' id='helpto' src='img/Info.png' alt='help'/></div>
+            <div class='editopt'><label for="editIf">IF</label><input id='editIf' class='numberEntry' type='text' value='1.0' /><img class='helpico' id='helpsegif' src='img/Info.png' alt='help'/></div>
+            <div class='editopt'><label for="editDesc">Description</label><input id='editDesc' class='textEntry' type='text' value='' /><img class='helpico' id='helpdesc' src='img/Info.png' alt='help'/></div>
+			<div class='buttons'>
+				<button id='editSave'>OK</button>
+				<button id='editCancel'>Cancel</button>
+			</div>
+		</div>
+		<h2>Calculated Results</h2>
+		<div id='eventIF' class='result'>
+        </div>
+        <div id='eventNP' class='result'>
+        </div>
+        <div id='eventAveP' class='result'>
+        </div>
+		<div id='message'>
+		</div>
+	</body>
+</html>

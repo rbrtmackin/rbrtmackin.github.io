@@ -1,0 +1,52 @@
+body {
+	color: #669;
+	border-color: #669;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 16px;
+}
+
+img, button, qtip{
+	display: none;
+}
+
+#levels td {
+	border-style: solid;
+	border-width: medium; 
+	padding:10px;
+	text-align: center;
+}
+
+#level1 td {
+	border-color: #99FFFF;
+	color: #000;
+}
+
+#level2 td {
+	border-color: #FFFF99;
+	color: #000;
+}
+
+#level3 td {
+	border-color: #FFFF00;
+	color: #000;
+}
+
+#level4 td {
+	border-color: #FFCC33;
+	color: #000;
+}
+
+#level5 td {
+	border-color: #FF9933;
+	color: #000;
+}
+
+#level6 td {
+	border-color: #FF6600;
+	color: #000;
+}
+
+#level7 td{
+	border-color: #FF3300;
+	color: #000;
+}

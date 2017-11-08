@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Cycling Power Levels</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<link rel="stylesheet" href="css/traininglevels.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="css/traininglevels_print.css" type="text/css" media="print" />
+		<script type='text/javascript' language="JavaScript" SRC="js/jquery.js"></script>
+		<script type='text/javascript' language="JavaScript" SRC="js/traininglevels.js"></script>
+		<script type='text/javascript' language="JavaScript" SRC="js/jquery.numeric.js"></script>
+		<script type='text/javascript' language="JavaScript" SRC="js/jquery.qtip-1.0.0-rc3.min.js"></script>
+	</head>
+	<body>
+		<h1>Cycling Power Levels</h1>
+		<div id='print'><img id='printbtn' src='img/Print.png' alt='print'/></div>
+		<table>
+			<tr><th></th><th></th></tr>
+			<tr><td>Average Power for 20min TT </td><td><input id='avgpower' class='numberEntry' type='text' maxlength="4" size="4"/></td><td><img class='helpico' id='helpavgpwr' src='img/Info.png' alt='help'/></td></tr>
+			<tr><td>Functional Threshold Power (FTP)</td><td><input id='ftpower' class='numberEntry' type='text' maxlength="4" size="4"/></td><td><img class='helpico' id='helpftp' src='img/Info.png' alt='help'/></td></tr>
+		</table>
+		<table id='levels'>
+			<tr><th>Intensity Level</th><th>Low</th><th>High</th></tr>
+			<tr id='level1'><td>Level 1 Recovery</td><td "level1valL">0</td><td id="level1valH">0</td></tr>
+			<tr id='level2'><td>Level 2 Endurance</td><td id="level2valL">0</td><td id="level2valH">0</td></tr>
+			<tr id='level3'><td>Level 3 Mod Hard</td><td id="level3valL">0</td><td id="level3valH">0</td></tr>
+			<tr id='level4'><td>Level 4 Threshold</td><td id="level4valL">0</td><td id="level4valH">0</td></tr>
+			<tr id='level5'><td>Level 5 Vo2Max</td><td id="level5valL">0</td><td id="level5valH">0</td></tr>
+			<tr id='level6'><td>Level 6 Anaerobic</td><td id="level6valL">0</td><td id="level6valH">0</td></tr>
+			<tr id='level7'><td>Level 7 Sprints</td><td id="level7valL">0</td><td id="level7valH">& Higher</td></tr>
+		</table>
+		<div id='message'>
+		</div>
+	</body>
+</html>

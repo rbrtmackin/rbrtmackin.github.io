@@ -1,0 +1,94 @@
+body {
+	color: #669;
+	border-color: #669;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 12px;
+}
+
+label:after { content: ": " }
+
+input.disabled {background: buttonface; border: none}
+
+img, button, qtip{
+	display: none;
+}
+
+.show {
+	display:block;
+}
+
+.hide {
+    display:none;
+}
+
+.helpico {
+	margin-left: 10px;
+} 
+
+#title {
+	text-align: center;
+}
+
+#globals {
+    margin: 15px;
+}
+
+#globals label {
+	width: 16em;
+	float: left;
+	vertical-align:middle;
+}
+
+#edit label {
+    width: 8em;
+    float: left;
+}
+
+#plan {
+	border-collapse: collapse;
+    text-align: left;
+}
+
+#plan td , #plan th{
+	color: #669;
+	padding: 8px;
+	border-left-style: solid;
+	border-left-width: thin; 
+	border-right-style: solid;
+    border-right-width: thin; 
+}
+
+#plan th {
+	border-top-style: outset;
+    border-bottom-style: outset;
+    border-width: thin;
+}
+
+#plan tr.odd {
+    background: #E8EDFF;
+}
+
+
+#message {
+	color: red;
+	font-weight: bold;
+}
+
+.result {
+    font-weight: bold;
+	font-size: 14px;
+	margin: 15px;
+}
+
+#edit {
+    margin: 20px;
+	width: 500px;
+	padding: 10px;
+	border-style: solid;
+	border-width: thin;
+}
+
+.buttons {
+	margin: 10px;
+}
+

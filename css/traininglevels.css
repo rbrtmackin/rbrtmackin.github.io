@@ -1,0 +1,41 @@
+body {
+	color: #669;
+	border-color: #669;
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 16px;
+}
+
+#level1 {
+	background-color: #99FFFF;
+	color: #000;
+}
+
+#level2 {
+	background-color: #FFFF99;
+	color: #000;
+}
+
+#level3 {
+	background-color: #FFFF00;
+	color: #000;
+}
+
+#level4 {
+	background-color: #FFCC33;
+	color: #000;
+}
+
+#level5 {
+	background-color: #FF9933;
+	color: #000;
+}
+
+#level6 {
+	background-color: #FF6600;
+	color: #000;
+}
+
+#level7{
+	background-color: #FF3300;
+	color: #000;
+}
